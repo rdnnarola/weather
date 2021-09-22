@@ -1,13 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-interface errorInterface {
-    error : string
-}
+const Error = ({ error }:any) => (
+  <>
+    {error}
+  </>
+);
 
-export default function Error(props:errorInterface) {
-    return (
-        <>
-            {props.error}
-        </>
-    )
-}
+export default Error;
